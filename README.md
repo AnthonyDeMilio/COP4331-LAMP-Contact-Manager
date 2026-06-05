@@ -3,7 +3,7 @@
 ## Team Members
 
 * Anthony DeMilio
-* [Teammate 1]
+* Michael Posso
 * [Teammate 2]
 * [Teammate 3]
 
