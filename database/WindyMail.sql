@@ -1,0 +1,23 @@
+CREATE DATABASE WindyMail;
+
+USE WindyMail;
+
+CREATE TABLE Users
+(
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Login VARCHAR(50) UNIQUE,
+    PasswordHash VARCHAR(255)
+);
+
+CREATE TABLE Contacts
+(
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    UserID INT NOT NULL,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Phone VARCHAR(50),
+    Email VARCHAR(100),
+    FOREIGN KEY (UserID) REFERENCES Users(ID)
+);

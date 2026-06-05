@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WindyMail</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="background-waves"></div>
+
+    <main class="login-container">
+    <section class="hero-card">
+        <div class="brand-area">
+            <div class="logo-circle">
+    <svg class="wind-logo-svg" viewBox="0 0 100 100">
+        <path d="M18 34 C35 22, 58 22, 75 34" />
+    <path d="M28 50 C45 38, 68 38, 85 50" />
+    <path d="M18 66 C35 54, 58 54, 75 66" />
+    </svg>
+</div>
+            <h1>WindyMail</h1>
+            <p class="tagline">Breeze through your contacts.</p>
+            <p class="description">
+                A calm, simple, and secure way to manage your personal contacts.
+            </p>
+        </div>
+
+        <div class="auth-grid">
+            <div class="form-section">
+                <h2>Welcome Back</h2>
+
+                <input type="text" id="loginName" placeholder="Username">
+                <input type="password" id="loginPassword" placeholder="Password">
+
+                <button onclick="doLogin()">Log In</button>
+
+                <p id="loginResult" class="message"></p>
+            </div>
+
+            <div class="form-section signup-box">
+                <h2>Create Account</h2>
+
+                <input type="text" id="firstName" placeholder="First Name">
+                <input type="text" id="lastName" placeholder="Last Name">
+                <input type="text" id="registerLogin" placeholder="Username">
+                <input type="password" id="registerPassword" placeholder="Password">
+
+                <button onclick="doRegister()">Sign Up</button>
+
+                <p id="registerResult" class="message"></p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <script src="js/code.js"></script>
+</body>
+</html>

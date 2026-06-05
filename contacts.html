@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WindyMail Contacts</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="background-waves"></div>
+
+    <main class="dashboard">
+        <header class="dashboard-header">
+    <div class="dashboard-brand">
+        <div class="logo-circle small-logo">
+    <svg class="wind-logo-svg" viewBox="0 0 100 100">
+        <path d="M18 34 C35 22, 58 22, 75 34" />
+    <path d="M28 50 C45 38, 68 38, 85 50" />
+    <path d="M18 66 C35 54, 58 54, 75 66" />
+    </svg>
+</div>
+        <div>
+            <h1>WindyMail</h1>
+            <p id="userInfo">Welcome</p>
+        </div>
+    </div>
+
+    <div class="dashboard-stats">
+        <div class="stat-card">
+            <span id="contactCount">0</span>
+            <p>Contacts</p>
+        </div>
+
+        <button onclick="logout()" class="logout-btn">Log Out</button>
+    </div>
+</header>
+
+<section class="welcome-banner">
+
+    <div>
+        <h2>🌊 Welcome to WindyMail</h2>
+
+        <p>
+            Manage your contacts with a calm and organized workflow.
+        </p>
+    </div>
+
+    <div class="welcome-stats">
+        <div class="mini-stat">
+            <span id="contactCountBanner">0</span>
+            <small>Total Contacts</small>
+        </div>
+    </div>
+
+</section>
+
+        <section class="card wide-card">
+            <h2>Add Contact</h2>
+
+            <div class="contact-form">
+                <input type="text" id="contactFirstName" placeholder="First Name">
+                <input type="text" id="contactLastName" placeholder="Last Name">
+                <input type="text" id="contactPhone" placeholder="Phone">
+                <input type="text" id="contactEmail" placeholder="Email">
+                <button onclick="addContact()">Add Contact</button>
+            </div>
+
+            <p id="addResult" class="message"></p>
+        </section>
+
+<section class="card wide-card" id="editSection" style="display: none;">
+    <h2>Edit Contact</h2>
+
+    <div class="contact-form">
+        <input type="hidden" id="editContactId">
+        <input type="text" id="editFirstName" placeholder="First Name">
+        <input type="text" id="editLastName" placeholder="Last Name">
+        <input type="text" id="editPhone" placeholder="Phone">
+        <input type="text" id="editEmail" placeholder="Email">
+        <button onclick="saveEditedContact()">Save Changes</button>
+    </div>
+
+    <button onclick="cancelEdit()" class="cancel-btn">Cancel</button>
+
+    <p id="editResult" class="message"></p>
+</section>
+
+        <section class="card wide-card">
+            <h2>Search Contacts</h2>
+
+            <div class="search-row">
+                <input type="text" id="searchText" placeholder="Search by name, phone, or email">
+                <button onclick="searchContacts()">Search</button>
+            </div>
+
+            <p id="searchResult" class="message"></p>
+
+            <div id="contactsList" class="contacts-list"></div>
+        </section>
+    </main>
+
+    <script src="js/code.js"></script>
+</body>
+</html>
