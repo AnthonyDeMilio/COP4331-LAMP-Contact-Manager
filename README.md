@@ -42,7 +42,7 @@ WindyMail is a personal contact manager built using a LAMP stack. Users can regi
 
 ## Application URL
 
-(To be added once the domain is connected)
+https://windymail.top/
 
 ## GitHub Repository
 
