@@ -4,7 +4,7 @@
 
 * Anthony DeMilio
 * Michael Posso
-* [Teammate 2]
+* Alex Grigalashvili
 * [Teammate 3]
 
 ## Project Description
