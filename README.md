@@ -5,7 +5,7 @@
 * Anthony DeMilio
 * Michael Posso
 * Alex Grigalashvili
-* [Teammate 3]
+* Caden Hensel
 
 ## Project Description
 
